@@ -1,4 +1,4 @@
-FROM python:3.8-alpine as compile
+FROM python:3.10.15-alpine as compile
 WORKDIR /opt
 RUN apk add --no-cache git gcc musl-dev python3-dev libffi-dev openssl-dev cargo
 RUN python3 -m pip install virtualenv
